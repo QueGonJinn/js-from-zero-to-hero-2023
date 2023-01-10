@@ -1,3 +1,72 @@
+:root {
+	--text: #666666;
+	--hover: #0e665f;
+	--white: #ffffff;
+}
+
 html {
 	font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: auto minmax(320px, 1250px);
+	grid-template-rows: auto 1fr auto;
+	min-height: 100vh;
+
+	grid-template-areas:
+		'. header .'
+		'. main .'
+		'. footer .';
+}
+
+.header {
+	grid-area: header;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0 20px 0;
+}
+
+.header__menu ul {
+	display: flex;
+	max-width: 700px;
+	gap: 67px;
+}
+
+.header__menu ul li {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	width: 150px;
+}
+.header__menu ul li a {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 26px;
+	text-decoration: none;
+	color: var(--text);
+}
+.header__menu ul li:hover {
+	background-color: var(--hover);
+	border-radius: 100px;
+}
+.header__menu ul li:hover a {
+	color: var(--white);
+}
+
+.header__social {
+	display: flex;
+	gap: 20px;
+}
+
+.header__social a svg:hover path {
+	fill: var(--hover);
+}
+
+.main {
+	grid-area: main;
+}
+
+.footer {
+	grid-area: footer;
 }
