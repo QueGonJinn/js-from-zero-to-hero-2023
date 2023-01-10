@@ -2,6 +2,7 @@
 	--text: #666666;
 	--hover: #0e665f;
 	--white: #ffffff;
+	--title: #0d3c45;
 }
 
 html {
@@ -24,11 +25,13 @@ html {
 	grid-area: header;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	padding: 20px 0 20px 0;
 }
 
 .header__menu ul {
 	display: flex;
+	align-items: center;
 	max-width: 700px;
 	gap: 67px;
 }
@@ -37,7 +40,7 @@ html {
 	display: block;
 	padding: 10px;
 	text-align: center;
-	width: 150px;
+	max-width: 150px;
 }
 .header__menu ul li a {
 	font-weight: 500;
@@ -56,6 +59,7 @@ html {
 
 .header__social {
 	display: flex;
+	align-items: center;
 	gap: 20px;
 }
 
@@ -65,6 +69,104 @@ html {
 
 .main {
 	grid-area: main;
+}
+
+.home {
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.home__descr {
+	max-width: 735px;
+}
+
+.home__subtitle {
+	font-weight: 500;
+	font-size: 58px;
+	line-height: 70px;
+	color: var(--hover);
+}
+.home__title {
+	font-weight: 700;
+	font-size: 65px;
+	line-height: 70px;
+	color: var(--title);
+}
+
+.home__text {
+	font-weight: 500;
+	font-size: 35px;
+	line-height: 45px;
+	color: var(--hover);
+}
+
+.home__img img {
+	max-width: 400px;
+}
+
+.about {
+	margin-top: 100px;
+}
+
+.about__title {
+	text-align: center;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 26px;
+	color: var(--title);
+}
+
+.about__text {
+	margin-top: 40px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 26px;
+	color: var(--text);
+	padding: 0px 10px 0px 30px;
+}
+
+.education {
+	margin-top: 100px;
+	padding: 0 0px 0 30px;
+}
+
+.education__title {
+	text-align: center;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 26px;
+	color: var(--title);
+}
+
+.education__wrapper {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.education__name {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 32px;
+	color: #363636;
+}
+
+.education__spec {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 36px;
+	color: var(--text);
+}
+
+.education__year {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 36px;
+	color: #363636;
 }
 
 .footer {
