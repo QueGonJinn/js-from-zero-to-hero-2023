@@ -19,14 +19,14 @@
 			<header class="header">
 				<nav class="header__menu">
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About Me</a></li>
-						<li><a href="#">Gallery</a></li>
-						<li><a href="#">Contacts</a></li>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About Me</a></li>
+						<li><a href="#education">Education</a></li>
+						<li><a href="#gallery">Gallery</a></li>
 					</ul>
 				</nav>
 				<div class="header__social">
-					<a href="#">
+					<a target="_blank" href="https://github.com/QueGonJinn">
 						<svg
 							width="30"
 							height="30"
@@ -42,7 +42,7 @@
 							/>
 						</svg>
 					</a>
-					<a href="#">
+					<a target="_blank" href="https://www.linkedin.com/in/molialow/">
 						<svg
 							width="30"
 							height="30"
@@ -63,47 +63,213 @@
 							</defs>
 						</svg>
 					</a>
-					<a href="#">
+				</div>
+			</header>
+			<div class="menu">
+				<div class="menu__block">
+					<div class="menu__close">
 						<svg
-							width="32"
-							height="32"
-							viewBox="0 0 32 32"
+							width="20"
+							height="20"
+							viewBox="0 0 29 30"
 							fill="none"
 							xmlns="http://www.w3.org/2000/svg"
 						>
 							<path
-								d="M16.875 1.875C8.59152 1.875 1.875 8.59152 1.875 16.875C1.875 25.1585 8.59152 31.875 16.875 31.875C25.1585 31.875 31.875 25.1585 31.875 16.875C31.875 8.59152 25.1585 1.875 16.875 1.875ZM24.0837 13.1819C24.0937 13.3393 24.0937 13.5033 24.0937 13.6641C24.0937 18.5792 20.3504 24.2411 13.51 24.2411C11.4007 24.2411 9.44531 23.6283 7.79799 22.5737C8.09933 22.6071 8.38728 22.6205 8.69531 22.6205C10.4364 22.6205 12.0368 22.0312 13.3125 21.0335C11.6786 21 10.3058 19.9286 9.83705 18.4554C10.4096 18.5391 10.9252 18.5391 11.5145 18.3884C10.6732 18.2175 9.91699 17.7605 9.37438 17.0953C8.83178 16.43 8.53623 15.5973 8.53795 14.7388V14.692C9.03013 14.9699 9.60938 15.1406 10.2154 15.1641C9.70595 14.8245 9.28814 14.3645 8.99903 13.8249C8.70993 13.2852 8.55845 12.6825 8.55804 12.0703C8.55804 11.3772 8.73884 10.7444 9.06362 10.1953C9.99744 11.3449 11.1627 12.2851 12.4837 12.9548C13.8047 13.6245 15.2518 14.0088 16.731 14.0826C16.2054 11.5547 18.0938 9.50893 20.3638 9.50893C21.4353 9.50893 22.3996 9.95759 23.0792 10.6808C23.9196 10.5234 24.7232 10.2087 25.4397 9.78683C25.1618 10.6473 24.5792 11.3739 23.8058 11.8326C24.5558 11.7522 25.279 11.5446 25.9487 11.2533C25.4431 11.9967 24.8103 12.6562 24.0837 13.1819Z"
-								fill="#666666"
+								d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z"
+								fill="#ffffff"
 							/>
 						</svg>
-					</a>
+					</div>
+					<nav>
+						<ul class="menu__list">
+							<li class="menu__link"><a href="#home">Home</a></li>
+							<li class="menu__link"><a href="#about">About Me</a></li>
+							<li class="menu__link"><a href="#education">Education</a></li>
+							<li class="menu__link"><a href="#gallery">Gallery</a></li>
+						</ul>
+					</nav>
 				</div>
-			</header>
+				<div class="menu__overlay"></div>
+			</div>
 			<main class="main">
-				<section class="home">
+				<div class="hamburger">
+					<span></span>
+					<span class="long"></span>
+					<span></span>
+				</div>
+				<section class="home" id="home">
 					<div class="home__descr">
-						<h2 class="home__subtitle">Hi, my name is</h2>
-						<h1 class="home__title">Yury Moliakow</h1>
-						<p class="home__text">I am a frontend developer</p>
+						<div class="home__descr-wrapper">
+							<h2 class="home__subtitle">Hi, my name is</h2>
+							<h1 class="home__title">Yury Moliakow</h1>
+							<p class="home__text">I am a frontend developer</p>
+						</div>
+						<div class="home__contacts">
+							<div class="home__contacts-item">
+								<svg
+									version="1.1"
+									id="Layer_1"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+									x="0px"
+									width="30"
+									height="30"
+									y="0px"
+									viewBox="0 0 64 64"
+									enable-background="new 0 0 64 64"
+									xml:space="preserve"
+								>
+									<g>
+										<g>
+											<g>
+												<path
+													class="svg-hover"
+													fill="#666666"
+													d="M32,0c17.7,0,32,14.3,32,32S49.7,64,32,64S0,49.7,0,32S14.3,0,32,0z"
+												/>
+											</g>
+										</g>
+										<g>
+											<g>
+												<path
+													fill="#FFFFFF"
+													d="M14,20.9c-2.9,4.3,0.6,13.3,8.1,20.9s16.6,11,20.9,8.1c0.2-0.1,0.3-0.2,0.4-0.3l2.9-2.9
+				c0.9-0.9,0.8-2.4-0.2-3.5L41,38.2c-1-1-2.6-1.1-3.5-0.2l-3.4,3.4c-0.3,0.3-0.9,0.4-1.3,0.1c-1.9-1.3-3.7-2.8-5.5-4.6
+				c-1.8-1.8-3.3-3.7-4.6-5.5c-0.3-0.4-0.3-1,0.1-1.3l3.4-3.4c0.9-0.9,0.8-2.4-0.2-3.5l-5.2-5.2c-1-1-2.6-1.1-3.5-0.2l-2.9,2.9
+				C14.2,20.6,14.1,20.8,14,20.9z"
+												/>
+											</g>
+										</g>
+										<g>
+											<g>
+												<path
+													fill="#FFFFFF"
+													d="M41.1,31.9h-3c0-3.9-3.2-7-7-7v-3C36.6,21.9,41.1,26.4,41.1,31.9z"
+												/>
+											</g>
+										</g>
+										<g>
+											<g>
+												<path
+													fill="#FFFFFF"
+													d="M47.5,33h-3c0-8-6.5-14.5-14.5-14.5v-3C39.6,15.5,47.5,23.4,47.5,33z"
+												/>
+											</g>
+										</g>
+									</g>
+								</svg>
+
+								<div class="home__contacts-text">
+									<a class="phone" href="tel:&nbsp+375297026403">+375&nbsp(29)&nbsp7026403</a>
+								</div>
+							</div>
+							<div class="home__contacts-item">
+								<svg
+									width="30"
+									height="30"
+									version="1.1"
+									id="Layer_1"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+									x="0px"
+									y="0px"
+									viewBox="0 0 45.3 45.6"
+									enable-background="new 0 0 45.3 45.6"
+									xml:space="preserve"
+								>
+									<g>
+										<g>
+											<circle class="svg-hover" fill="#666666" cx="22.7" cy="23" r="21.6" />
+										</g>
+										<g>
+											<g>
+												<rect x="9" y="13.8" fill="#FFFFFF" width="27.2" height="18.4" />
+												<path
+													class="svg-hover"
+													fill="#666666"
+													d="M36.3,32.8H9c-0.4,0-0.7-0.3-0.7-0.7V13.8c0-0.4,0.3-0.7,0.7-0.7h27.2c0.4,0,0.7,0.3,0.7,0.7v18.4
+				C36.9,32.5,36.6,32.8,36.3,32.8z M9.7,31.5h25.9v-17H9.7V31.5z"
+												/>
+											</g>
+											<g>
+												<path
+													class="svg-hover"
+													fill="#666666"
+													d="M22.7,25.6c-0.9,0-1.8-0.3-2.5-1L8.6,14.3c-0.2-0.2-0.3-0.5-0.2-0.7c0.1-0.3,0.3-0.4,0.6-0.4h27.2
+				c0.3,0,0.5,0.2,0.6,0.4c0.1,0.3,0,0.6-0.2,0.7L25.2,24.6l0,0C24.4,25.3,23.5,25.6,22.7,25.6z M10.8,14.5L21,23.6
+				c0.9,0.8,2.3,0.8,3.2,0l10.2-9.2H10.8z M24.7,24.1L24.7,24.1L24.7,24.1z"
+												/>
+											</g>
+											<g>
+												<path
+													class="svg-hover"
+													fill="#666666"
+													d="M36.3,32.7H9c-0.3,0-0.5-0.2-0.6-0.4c-0.1-0.3,0-0.6,0.2-0.7l10.1-9.1c0.3-0.2,0.7-0.2,1,0.1
+				c0.2,0.3,0.2,0.7-0.1,1l-8.8,7.9h23.7l-8.8-7.9c-0.3-0.2-0.3-0.7-0.1-1c0.2-0.3,0.7-0.3,1-0.1l10.1,9.1c0.2,0.2,0.3,0.5,0.2,0.7
+				C36.8,32.5,36.5,32.7,36.3,32.7z"
+												/>
+											</g>
+										</g>
+									</g>
+								</svg>
+
+								<div class="home__contacts-text">
+									<a class="email" href="mailto: molialow13@gmail.com">molialow13@gmail.com</a>
+								</div>
+							</div>
+							<div class="home__contacts-item">
+								<svg
+									width="30"
+									height="30"
+									viewBox="0 0 30 30"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<g clip-path="url(#clip0_2_102)">
+										<path
+											class="svg-hover"
+											d="M15.0439 13.4722C16.3776 13.4722 17.4588 12.391 17.4588 11.0572C17.4588 9.7235 16.3776 8.6423 15.0439 8.6423C13.7102 8.6423 12.629 9.7235 12.629 11.0572C12.629 12.391 13.7102 13.4722 15.0439 13.4722Z"
+											fill="#666666"
+										/>
+										<path
+											class="svg-hover"
+											d="M15.0006 0C6.71664 0 0.000976562 6.71587 0.000976562 14.9998C0.000976562 23.2836 6.71664 30 15.0006 30C23.2846 30 30.0008 23.2836 30.0008 14.9998C30.0008 6.71587 23.2846 0 15.0006 0ZM14.9695 6.86787C14.9801 6.86787 14.9905 6.86737 15.0009 6.86687C15.0113 6.86737 15.0216 6.86787 15.0323 6.86787C17.5598 6.90777 19.6158 8.99669 19.6158 11.5247C19.6158 14.6155 16.3133 17.7453 15.0009 18.8667C14.9132 18.7917 14.816 18.7072 14.712 18.6146C14.7102 18.613 14.7086 18.6117 14.7071 18.6102C13.2547 17.3196 10.3862 14.4056 10.3862 11.5247C10.3861 8.99669 12.4423 6.90787 14.9695 6.86787ZM15.066 23.2252C12.2997 23.2252 9.49907 22.4316 9.49907 20.9154C9.49907 19.8513 10.8781 19.1437 12.656 18.8159C12.9999 19.1616 13.3254 19.4664 13.611 19.7208C11.6744 19.9371 10.5366 20.5502 10.5366 20.9151C10.5366 21.3635 12.2561 22.1875 15.066 22.1875C17.876 22.1875 19.5958 21.3635 19.5958 20.9151C19.5958 20.5427 18.41 19.9142 16.403 19.7099C16.6911 19.4526 17.0192 19.145 17.3657 18.7957C19.1971 19.1145 20.6332 19.8292 20.6332 20.9154C20.6332 22.4316 17.8326 23.2252 15.066 23.2252Z"
+											fill="#666666"
+										/>
+									</g>
+									<defs>
+										<clipPath id="clip0_2_102">
+											<rect width="30" height="30" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+								<div class="home__contacts-text">
+									<a class="addres" href="https://goo.gl/maps/6qDoDEQ6tNEXfhsU7"
+										>Pletnickogo 41, Slonim, BY</a
+									>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="home__img">
 						<img src="./assets/img/avatar.png" alt="avatar" />
 					</div>
 				</section>
-				<section class="about">
+				<section class="about" id="about">
 					<h2 class="about__title">About Me</h2>
 					<p class="about__text">
-						I began his career in 2015 at the NDC "Zubrenok" as a teacher of mathematics and
-						computer science. To broaden my horizons, I began to study educational robotics and soon
-						became an additional education teacher and curator of the Robolizer profile block. But I
-						did not see myself as a teacher of one discipline, so I began to study 3D modeling and
-						Front-end development.<br />
+						My age is 30 years old. I began his career in 2015 at the NDC "Zubrenok" as a teacher of
+						mathematics and computer science. To broaden my horizons, I began to study educational
+						robotics and soon became an additional education teacher and curator of the Robolizer
+						profile block. But I did not see myself as a teacher of one discipline, so I began to
+						study 3D modeling and Front-end development.<br />
 						In educational projects, I pay attention to adaptability and cross-browser. For myself,
 						I singled out that you need to learn JavaScript perfectly. Now I'm actively learning
 						ReactJs and TypeScript.
 					</p>
 				</section>
-				<section class="education">
+				<section class="education" id="education">
 					<h2 class="education__title">Education</h2>
 					<div class="education__wrapper">
 						<div class="education__item">
@@ -140,9 +306,92 @@
 						</div>
 					</div>
 				</section>
-				<section class="slider"></section>
+				<section class="slider" id="gallery">
+					<h2 class="slider__title">Various (exotic) landscapes</h2>
+					<div class="slider__wrapper">
+						<figure>
+							<img src="./assets/img/slider/kjo88vkflya91.webp" alt />
+							<img src="./assets/img/slider/n8ffjf8mkya91.webp" alt />
+							<img src="./assets/img/slider/rdyg0madkya91.webp" alt />
+							<img src="./assets/img/slider/riyqiccakya91.webp" alt />
+							<img src="./assets/img/slider/zfgiqnsekya91.webp" alt />
+						</figure>
+					</div>
+				</section>
+				<button onclick="topFunction()" id="myBtn" title="Go to top">
+					<svg
+						width="30px"
+						height="28px"
+						viewBox="0 0 8 5"
+						version="1.1"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+					>
+						<!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+						<title>arrow_drop_down</title>
+						<desc>Created with Sketch.</desc>
+						<g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g id="Rounded" transform="translate(-482.000000, -3442.000000)">
+								<g id="Navigation" transform="translate(100.000000, 3378.000000)">
+									<g
+										id="-Round-/-Navigation-/-arrow_drop_down"
+										transform="translate(374.000000, 54.000000)"
+									>
+										<g>
+											<polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+											<path
+												d="M8.71,11.71 L11.3,14.3 C11.69,14.69 12.32,14.69 12.71,14.3 L15.3,11.71 C15.93,11.08 15.48,10 14.59,10 L9.41,10 C8.52,10 8.08,11.08 8.71,11.71 Z"
+												id="🔹-Icon-Color"
+												fill="#ffffff"
+											></path>
+										</g>
+									</g>
+								</g>
+							</g>
+						</g>
+					</svg>
+				</button>
 			</main>
-			<footer class="footer">Hello</footer>
+			<footer class="footer">
+				<a target="_blank" href="https://github.com/QueGonJinn">
+					<svg
+						width="30"
+						height="30"
+						viewBox="0 0 30 30"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M15 0C6.7125 0 0 6.7125 0 15C0 21.6375 4.29375 27.2437 10.2563 29.2313C11.0063 29.3625 11.2875 28.9125 11.2875 28.5188C11.2875 28.1625 11.2688 26.9813 11.2688 25.725C7.5 26.4188 6.525 24.8062 6.225 23.9625C6.05625 23.5312 5.325 22.2 4.6875 21.8438C4.1625 21.5625 3.4125 20.8687 4.66875 20.85C5.85 20.8313 6.69375 21.9375 6.975 22.3875C8.325 24.6562 10.4812 24.0187 11.3438 23.625C11.475 22.65 11.8688 21.9937 12.3 21.6187C8.9625 21.2437 5.475 19.95 5.475 14.2125C5.475 12.5813 6.05625 11.2313 7.0125 10.1813C6.8625 9.80625 6.3375 8.26875 7.1625 6.20625C7.1625 6.20625 8.41875 5.8125 11.2875 7.74375C12.4875 7.40625 13.7625 7.2375 15.0375 7.2375C16.3125 7.2375 17.5875 7.40625 18.7875 7.74375C21.6562 5.79375 22.9125 6.20625 22.9125 6.20625C23.7375 8.26875 23.2125 9.80625 23.0625 10.1813C24.0188 11.2313 24.6 12.5625 24.6 14.2125C24.6 19.9688 21.0938 21.2437 17.7563 21.6187C18.3 22.0875 18.7688 22.9875 18.7688 24.3937C18.7688 26.4 18.75 28.0125 18.75 28.5188C18.75 28.9125 19.0312 29.3813 19.7812 29.2313C22.759 28.2259 25.3465 26.3121 27.1796 23.7592C29.0127 21.2063 29.9991 18.1429 30 15C30 6.7125 23.2875 0 15 0Z"
+							fill="#666666"
+						/>
+					</svg>
+				</a>
+				<a target="_blank" href="https://www.linkedin.com/in/molialow/">
+					<svg
+						width="30"
+						height="30"
+						viewBox="0 0 30 30"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<g clip-path="url(#clip0_8_50)">
+							<path
+								d="M15 0.599976C7.04701 0.599976 0.600006 7.04698 0.600006 15C0.600006 22.953 7.04701 29.4 15 29.4C22.953 29.4 29.4 22.953 29.4 15C29.4 7.04698 22.953 0.599976 15 0.599976ZM11.475 20.9685H8.55901V11.5845H11.475V20.9685ZM9.99901 10.4325C9.07801 10.4325 8.48251 9.77997 8.48251 8.97297C8.48251 8.14948 9.09601 7.51648 10.0365 7.51648C10.977 7.51648 11.553 8.14948 11.571 8.97297C11.571 9.77997 10.977 10.4325 9.99901 10.4325ZM22.125 20.9685H19.209V15.768C19.209 14.5575 18.786 13.7355 17.7315 13.7355C16.926 13.7355 16.4475 14.292 16.236 14.8275C16.158 15.018 16.1385 15.288 16.1385 15.5565V20.967H13.221V14.577C13.221 13.4055 13.1835 12.426 13.1445 11.583H15.678L15.8115 12.8865H15.87C16.254 12.2745 17.1945 11.3715 18.768 11.3715C20.6865 11.3715 22.125 12.657 22.125 15.42V20.9685Z"
+								fill="#666666"
+							/>
+						</g>
+						<defs>
+							<clipPath id="clip0_8_50">
+								<rect width="30" height="30" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
+				</a>
+			</footer>
 		</div>
+		<script src="./js/index.js"></script>
 	</body>
 </html>
